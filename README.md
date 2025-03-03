@@ -1,54 +1,77 @@
-# React + TypeScript + Vite
+# 🏆 Match Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Превью Match Tracker](./preview.png)
 
-Currently, two official plugins are available:
+Современное веб-приложение для отслеживания матчей в реальном времени. Молниеносные обновления и стильный адаптивный интерфейс, который отлично выглядит на любом устройстве.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Возможности
 
-## Expanding the ESLint configuration
+- **Обновления в реальном времени** - Будьте в курсе актуального счета
+- **Адаптивный дизайн** - Идеальное отображение на любом устройстве
+- **Индикаторы статуса** - Наглядное отображение статуса матча (Live, Finished, Scheduled)
+- **Обработка ошибок** - Понятные сообщения об ошибках для пользователя
+- **Состояния загрузки** - Плавные анимации загрузки данных
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Технологии
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React** - Для создания динамичного пользовательского интерфейса
+- **TypeScript** - Для типизации кода и удобства разработки
+- **CSS Modules** - Для изолированных и поддерживаемых стилей
+- **Vite** - Для быстрой разработки и оптимизированной сборки
+
+## 🚀 Как запустить
+
+1. Клонируйте репозиторий:
+
+```bash
+git clone https://github.com/yourusername/match-tracker.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Установите зависимости:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd match-tracker
+npm install
 ```
+
+3. Запустите сервер разработки:
+
+```bash
+npm run dev
+```
+
+4. Откройте [http://localhost:5173](http://localhost:5173) в браузере
+
+## 📱 Скриншоты
+
+### Десктопная версия
+
+![Десктопная версия](./desktop.png)
+
+### Мобильная версия
+
+![Мобильная версия](./mobile.png)
+
+## 🔧 Интеграция с API
+
+Приложение интегрируется с мощным бэкенд-сервисом, который предоставляет данные о матчах в реальном времени:
+
+- Детали матчей (команды, счет)
+- Обновления статусов в реальном времени
+- История матчей
+
+## 🎯 Планы по развитию
+
+- Поддержка светлой/темной темы
+- Фильтрация и поиск матчей
+- Детальная статистика матчей
+- Push-уведомления об изменении счета
+- Отслеживание любимых команд
+
+## 📄 Лицензия
+
+MIT © [Ваше имя]
+
+---
+
+Сделано с ❤️ [Ваше имя]
