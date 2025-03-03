@@ -1,0 +1,76 @@
+.card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  min-width: 120px;
+  flex: 1;
+}
+
+.teamRight {
+  composes: team;
+  justify-content: flex-end;
+}
+
+.teamLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0 32px;
+  flex-shrink: 0;
+}
+
+.score {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.statusOngoing {
+  composes: status;
+  background: #4caf50;
+}
+
+.statusScheduled {
+  composes: status;
+  background: #ffa000;
+}
+
+.statusFinished {
+  composes: status;
+  background: #ff1f57;
+}
