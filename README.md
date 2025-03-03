@@ -60,4 +60,4 @@ npm run dev
 
 ---
 
-Сделано с ❤️ [Ваше имя]
+Сделано с ❤️ Nikita Petrochenko
